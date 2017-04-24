@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Baseball Momentum</title>
+	 <link href="main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<h1><center>Baseball Momentum</center></h1>
+<ul>
+  <li><a href="project2.html">Introduction</a></li>
+  <li><a href="link1.html">First Data Set</a></li>
+  <li><a href="link2.html">Second Data Set</a></li>
+  <li><a href="link3.html">Third Data Set</a></li>
+  <li><a href="chart.html">Chart & Conclusion</a></li>
+  <li><a href="video.html"> Video!! </a></li>
+ </ul>
+ <div style="margin-left:15%;padding:1px 16px;height:100px;">
+<script type="text/javascript">
+	window.onload = function() {
+		var chart = new CanvasJS.Chart("chartContainer", {
+			title: {
+				text: "First Line how hot the winning team(x-axis) was v/s        how hot the losing team was(y-axis)"
+			},
+			axisX: {
+				interval: 0.10
+				
+			},
+			data: [{
+				type: "line",
+				dataPoints: [
+				  {x: -0.204,y: 0.6},
+                   {x: -0.192, y: 1},
+                    {x: -0.064,y: 0.667},
+                     {x:-0.037,y:0.75},
+                        {x:0.018,y:	1},
+                       {x:0.054,y:0.75},
+                        {x:0.14,y:0.667},
+                         {x:0.148,y:0.6},
+                        {x:0.26,y:0.667}
+]
+			}]
+		});
+		chart.render();
+	}
+	</script>
+	<script src="canvasjs.min.js"></script>
+	<div id="chartContainer" style="width: 50%; height: 300px; align: center"></div>
+
+<h3>First Line/Data Series</h3>
+  <p>For this data series we are going to see "how hot the winning team was" 
+     minus "how hot the losing team was"</p>
+
+	<table>
+	<tr> <th>Team Name</th> 
+	<th>September WP</th>
+	<th>How hot the winning team was</th>
+	<th>Series WPCT</th>
+	<th>How hot the losing team was</th>
+	<th>(x, y)</th></tr>
+	<tr><td>WorldSeries (4-2):  Boston Red Sox </br>over </br>St. Louis Cardinals</td><td>0.640</br></br>0.704</td> <td>-0.064</td><td>4/6</td> <td> 0.667</td><td>(-0.064, 0.667)</td></tr>
+    <tr><td>ALCS (4-2):  Boston Red Sox </br>over </br>Detroit Tigers </td> <td>0.640</br></br>0.500</td><td>0.140</td><td>4/6</td> <td>  0.667</td><td>(0.140, 0.667)</td></tr>
+    <tr><td>NLCS (4-2):  St. Louis Cardinals </br>over </br>Los Angeles Dodgers </td><td>0.704</br></br> 0.444</td><td>0.260</td><td>4/6</td> <td>  0.667</td><td>(0.260, 0.667)</td></tr>
+    <tr><td>LDS (3-1):  Boston Red Sox </br>over </br>Tampa Bay Rays </td><td>0.640</br></br>0.586 </td> <td>0.054</td><td>3/4</td> <td>  0.750</td><td>(0.054, 0.750)</td></tr>
+    <tr><td>LDS (3-2):  Detroit Tigers </br>over </br>Oakland Athletics </td><td>0.500</br></br>0.704</td> <td>-0.204</td><td>3/5</td> <td>  0.600</td><td>(-0.204, 0.600)</td></tr>
+    <tr><td>LDS (3-2):  St. Louis Cardinals </br>over </br>Pittsburgh Pirates </td><td>0.704</br></br>0.556 </td><td>0.148</td><td>3/5</td> <td>  0.600</td><td>(0.148, 0.600)</td></tr>
+    <tr><td>LDS (3-1):  Los Angeles Dodgers </br>over </br>Atlanta Braves </td><td>0.444</br></br>0.481 </td><td>-0.037</td><td>3/4</td> <td>  0.750</td><td>(-0.037, 0.750)</td></tr>
+    <tr><td>WildCardGame (1-0):  Tampa Bay Rays </br>over </br>Cleveland Indians </td><td>0.586</br></br>0.778 </td><td>-0.192</td><td>1/1</td> <td>  1.000</td><td>(-0.192, 1.000)</td></tr>
+    <tr><td>WildCardGame (1-0):  Pittsburgh Pirates </br>over </br>Cincinnati Reds </td><td>0.556</br></br>0.538 </td><td>0.018</td><td>1/1</td> <td>  1.000</td><td>(0.018, 1.000)</td></tr>
+</table>
+	</br></br></br>
+
+	<footer><p><center>
+Group Project 2 by	Spurthi Gudigopuram (sgudi2)| Sri Manikanta Geda (sgeda2)| Junaid Mohiuddin Mohammed (jmoha4)| Bino George (bino2)|</br> Rohith Reddy Bokka (rbokk2)</center></p>
+	</footer>
+	</body>
+
+</html>

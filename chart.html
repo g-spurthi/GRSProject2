@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Baseball Momentum</title>
+	 <link href="main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<h1><center>Baseball Momentum</center></h1>
+<ul>
+  <li><a href="project2.html">Introduction</a></li>
+  <li><a href="link1.html">First Data Set</a></li>
+  <li><a href="link2.html">Second Data Set</a></li>
+  <li><a href="link3.html">Third Data Set</a></li>
+  <li><a href="chart.html">Chart & Conclusion</a></li>
+  <li><a href="video.html"> Video!! </a></li>
+ </ul>
+ <div style="margin-left:15%;padding:1px 16px;height:100px;">  
+  <script type="text/javascript">
+  window.onload = function () {
+        var chart = new CanvasJS.Chart("chartContainer", {
+        title: {
+          text: "Click on legend items to hide/unhide dataseries"
+        },
+        legend: {
+            cursor: "pointer",
+            itemclick: function (e) {
+                //console.log("legend click: " + e.dataPointIndex);
+                //console.log(e);
+                if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                    e.dataSeries.visible = false;
+                } else {
+                    e.dataSeries.visible = true;
+                }
+
+                e.chart.render();
+            }
+        },   
+      data: [{        
+        showInLegend: true,
+		type: "line",
+        dataPoints: [
+        {x: -0.204,y: 0.6},
+                   {x: -0.192, y: 1},
+                    {x: -0.064,y: 0.667},
+                     {x:-0.037,y:0.75},
+                        {x:0.018,y:	1},
+                       {x:0.054,y:0.75},
+                        {x:0.14,y:0.667},
+                         {x:0.148,y:0.6},
+                        {x:0.26,y:0.667}
+        ]
+      },{        
+        showInLegend: true,
+		type: "line",
+        dataPoints: [
+        {x: -0.025,y: 0.750},
+                   {x: -0.019, y: 0.600},
+                    {x: -0.004,y: 1},
+                     {x:0,y:0.667},
+                        {x:0.019,y:	0.600},
+                       {x:0.024,y:1},
+                        {x:0.025,y:0.667},
+                         {x:0.031,y:0.667},
+                        {x:0.035,y:0.750}
+        ]
+      },
+              {        
+        showInLegend: true,
+        type: "line",
+        dataPoints: [
+        {x: -0.068,y: 0.750},
+                   {x: -0.036, y: 0.600},
+                    {x: -0.015,y: 0.667},
+                     {x:0.011,y:0.600},
+                        {x:0.025,y:	0.750},
+                       {x:0.036,y:1},
+                        {x:0.044,y:1},
+                         {x:0.045,y:0.667},
+                        {x:0.113,y:0.667}
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+	<script src="canvasjs.min.js"></script>
+	<div id="chartContainer" style="width: 50%; height: 300px; align: center"></div>
+	<h3>Combination Chart</h3>
+    <p>The above Graph is a combination of all the data series.</p>
+	
+	<h3>Conclusion</h3>
+	<p>
+	From the data taken out of the 2013 playoffs and after making calculations on them we can see that the</br>
+	Boston Red Sox which won the championship had an equal Winning Pct with the St.Louis Cardinals which lost the series.</br>
+	From the above study we can say that Baseball Momentum has little to do with who claims victory.</br></br>	
+	<b>Boston Red Sox Won !!!</b></p>
+	</br>	</br>	</br>	</br>	</br>	</br>
+	<footer><p><center>
+Group Project 2 by	Spurthi Gudigopuram (sgudi2)| Sri Manikanta Geda (sgeda2)| Junaid Mohiuddin Mohammed (jmoha4)| Bino George (bino2)|</br> Rohith Reddy Bokka (rbokk2)</center></p>
+	</footer>
+	</body>
+
+</html>
